@@ -19,13 +19,13 @@ function one(){
     // console.log(website); //will give error
     two()
 }
-// one()
+one()
 
 if(true){
     const a="hitesh"
     if(a==="hitesh"){
         const web=" youtube"
-        // console.log(a+web)
+        console.log(a + web)
     }
 }
 
@@ -38,6 +38,10 @@ function addOne(num){
 
 const addTwo=function(num){
     return num+2;
+}
+
+const addThree = function(num){
+    return num + 3;
 }
 
 addTwo(5)
