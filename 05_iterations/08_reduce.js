@@ -24,3 +24,4 @@ const myCart=[
 
 const price=myCart.reduce((acc,item)=>acc+item.price,0)
 console.log(price);
+htAJpq929554
