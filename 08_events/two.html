@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // it will print my function at fix interval of 2 seconds single time
+    // setTimeout(function(){
+    //     console.log("Tanishq");
+    // },2000)
+
+    // it will repeat my function at fix interval of 2 seconds
+    // setInterval(function(){
+    //     console.log("Gupta");
+    // },2000)
+
+    // const sayName=function(){
+    //     console.log("Tanishq");
+    // }
+    // setTimeout(sayName,2000)
+    const changeText=function(){
+        document.querySelector('h1').innerHTML="best JS series"
+    }
+    const changeMe= setTimeout(changeText,2000)
+    document.getElementById('stop').addEventListener('click',function(e){
+        clearTimeout(changeMe)
+        console.log("Stopped");
+    })
+</script>
+</html>
